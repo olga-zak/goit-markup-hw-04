@@ -38,12 +38,16 @@
         </nav>
         <ul class="nav-contact-list">
           <li class="nav-contact-item">
-            <a class="nav-contact-link" href="mailto:info@devstudio.com"
+            <a class="nav-contact-link" href="mailto:info@devstudio.com">
+              <svg class="contact-list-icon" width="16px" height="12px">
+                <use href="./images/sprite.svg#envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="nav-contact-item">
             <a class="nav-contact-link" href="tel:+380961111111"
+              ><svg class="contact-list-icon" width="10px" height="16px">
+                <use href="./images/sprite.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -84,6 +88,7 @@
                 <p class="portfolio-text">Веб-сайт</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <img
                 src="./images/portfolio2.jpg"
@@ -187,35 +192,70 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a class="logo logo-footer" href="./index.html"
-          ><span class="logo-web">Web</span
-          ><span class="logo-studio">Studio</span>
-        </a>
-        <!-- logo-footer margin bottom 20 не работает. Как отодвинуть адрес от строчного элемента-ссылки? -->
-        <address class="footer-address">
-          <ul class="footer-address-list">
-            <li class="footer-address-item">
-              <a
-                class="footer-contact post-address"
-                href="https://goo.gl/maps/yZt3j3XsbeH96AAz7"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+      <div class="container container-flex">
+        <div class="footer-left-side">
+          <a class="logo logo-footer" href="./index.html"
+            ><span class="logo-web">Web</span
+            ><span class="logo-studio">Studio</span>
+          </a>
+          <!-- logo-footer margin bottom 20 не работает. Как отодвинуть адрес от строчного элемента-ссылки? display block? -->
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li class="footer-address-item">
+                <a
+                  class="footer-contact post-address"
+                  href="https://goo.gl/maps/yZt3j3XsbeH96AAz7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <a class="footer-contact" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <a class="footer-contact" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-right-side">
+          <h2 class="footer-title">присоединяйтесь</h2>
+          <ul class="social-links-list">
+            <li class="social-links-list-item">
+              <a class="social-links-list-link footer-social-link" href="">
+                <svg class="footer-social-link-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-address-item">
-              <a class="footer-contact" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <li class="social-links-list-item">
+              <a class="social-links-list-link footer-social-link" href="">
+                <svg class="footer-social-link-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-address-item">
-              <a class="footer-contact" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
+            <li class="social-links-list-item">
+              <a class="social-links-list-link footer-social-link" href="">
+                <svg class="footer-social-link-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-list-item">
+              <a class="social-links-list-link footer-social-link" href="">
+                <svg class="footer-social-link-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

@@ -115,6 +115,8 @@ img {
     margin-right: 50px;
 }
 .nav-contact-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -126,6 +128,16 @@ img {
 .nav-contact-link:focus {
     color: var(--accent-color)
 }
+.contact-list-icon {
+    margin-right: 10px;
+    fill: #757575;
+}
+.nav-contact-link:hover .contact-list-icon,
+.nav-contact-link:focus .contact-list-icon {
+    fill: var(--accent-color);
+}
+
+
 
 /*=======HERO SECTION=======*/
 .hero-section {
@@ -133,6 +145,15 @@ img {
     padding-bottom: 200px;
     background-color: #2F303A;   
     text-align: center;
+}
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .hero-title {
     margin: 0 auto 30px auto;
@@ -171,6 +192,18 @@ img {
 }
 .peculiarities-list-item:not(:nth-child(4n)) {
     margin-right: 30px;
+}
+.peculiarities-list-icon-container {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.peculiarities-list-icon {
+    width: 70px;
+    height: 70px;
 }
 .peculiarities-title {
     margin-bottom: 10px; 
@@ -237,12 +270,82 @@ img {
     font-weight: 500;  
     color: var(--secondary-color);
 }
+.team-text {
+    margin-bottom: 16px;
+}
+.social-links-list {
+    display: flex;
+    justify-content: center;
+}
+.social-links-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.social-links-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+}
+.social-links-list-link:hover,
+.social-links-list-link:focus {
+    background-color: var(--accent-color);
+}
+.team-social-list-icon {
+    fill: #afb1b8;
+}
+.social-links-list-link:hover .team-social-list-icon,
+.social-links-list-link:focus .team-social-list-icon {
+    fill: var(--bg-color);
+}
+
+/*=======OUR cLIENTS=======*/
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+.clients-list-item:not(:nth-child(6n)) {
+    margin-right: 30px;
+}
+.clients-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    padding: 17px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+    border: 1px solid var(--accent-color);
+}
+
+/* сама картинка слишком маленького размера, как её увеличить? 
+может надо из фигмы скачать не лого(с квадратом вокруг, а только группу векторов?*/
+.client-logo {
+    viewBox: 0 0 212 120;
+    fill: #afb1b8;
+}
+.clients-list-link:hover .client-logo,
+.clients-list-link:focus .client-logo {
+    fill: var(--accent-color);
+}
 
 /*=======FOOTER=======*/
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+}
+.container-flex {
+    display: flex;
+}
+.footer-left-side {
+    margin-right: 70px;
 }
 .logo-studio {
     color: var(--bg-color);
@@ -267,6 +370,27 @@ img {
 }
 .post-address {
     color: var(--bg-color);
+}
+.footer-right-side {
+    margin-top: 12px;
+}
+.footer-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--bg-color);
+}
+.footer-social-link {
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+}
+.footer-social-link-icon {
+    fill: var(--bg-color);
 }
 
 /*=======PORTFOLIO=======*/
@@ -302,6 +426,10 @@ img {
 }
 .portfolio-item {
     width: calc((100% - 60px) / 3);
+    /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); */
+}
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-item-text-container {
     padding: 20px 24px;
